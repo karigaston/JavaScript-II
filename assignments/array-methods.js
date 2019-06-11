@@ -87,6 +87,38 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
+let emails = [];
+
+let email = runners.map( emails => {
+    return emails.email;
+})
+
+emails.push(email);
+
+console.log(emails)
+
+
 // Problem 2
+let nameDonation =[];
+runners.forEach(runner => {
+    nameDonation.push(`${runner.first_name} ${runner.donation}`);
+});
+console.log(nameDonation);
 
 // Problem 3
+
+let company =[];
+
+let runnerCompanies = runners.map( person => {
+    return `${person.first_name} ${person.last_name} is with the ${person.company_name} company`
+})
+
+company.push(runnerCompanies);
+
+console.log(company);
+
+
+let netflix = runners.filter(companyName => {
+    return companyName.company_name === "netflix"})
+
+    console.log(netflix);
